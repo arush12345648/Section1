@@ -29,4 +29,13 @@ console.log(movies);
 movies.pop();
 movies.shift();
 console.log(movies);
+//adding and remove from specific position
+
+movies.splice(1,2);
+console.log(movies);
+
+
+movies.splice(-2,0,'superman','gadar');
+console.log(movies);
+
 
