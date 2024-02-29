@@ -30,6 +30,14 @@ const phoneList=[
 
     
 ];
-console.log(phoneList.length);
-console.log(phoneList[0].price);
-console.log(phoneList[1].color[1]);
+//console.log(phoneList.length);
+//console.log(phoneList[0].price);
+//console.log(phoneList[1].color[1]);
+const budgetphones= phoneList.filter((phone)=>{return phone.price<30000});
+console.log(budgetphones);
+
+const samsungPhone=phoneList.filter((phone)=>{return phone.brand=='samsung'});
+console.log(samsungPhone);
+
+const colors= phoneList.filter((phone)=>{return phone.color.includes('blue')});
+console.log(colors);
